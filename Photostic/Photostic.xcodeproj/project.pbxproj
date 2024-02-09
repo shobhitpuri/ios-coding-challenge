@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE46B3502B76491C001D6C88 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46B34F2B76491C001D6C88 /* MockNetworkManager.swift */; };
+		EE46B3582B76522C001D6C88 /* PhotoGridViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46B3572B76522C001D6C88 /* PhotoGridViewUITests.swift */; };
+		EE46B3622B76944B001D6C88 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE46B3612B76944B001D6C88 /* Launch Screen.storyboard */; };
 		EE82B5A42B740907006C92AC /* PhotosticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82B5A32B740907006C92AC /* PhotosticApp.swift */; };
 		EE82B5A62B740907006C92AC /* PhotoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82B5A52B740907006C92AC /* PhotoGridView.swift */; };
 		EE82B5A82B740908006C92AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE82B5A72B740908006C92AC /* Assets.xcassets */; };
 		EE82B5AB2B740908006C92AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE82B5AA2B740908006C92AC /* Preview Assets.xcassets */; };
-		EE82B5B52B740908006C92AC /* PhotosticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82B5B42B740908006C92AC /* PhotosticTests.swift */; };
-		EE82B5BF2B740908006C92AC /* PhotosticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82B5BE2B740908006C92AC /* PhotosticUITests.swift */; };
 		EE82B5C12B740908006C92AC /* PhotosticUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82B5C02B740908006C92AC /* PhotosticUITestsLaunchTests.swift */; };
 		EE82B5D42B7417B0006C92AC /* MockUnsplashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82B5D32B7417B0006C92AC /* MockUnsplashData.swift */; };
 		EE82B5D62B742498006C92AC /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82B5D52B742498006C92AC /* UnsplashImage.swift */; };
 		EE82B5D92B742B3D006C92AC /* sampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EE82B5D82B742B3D006C92AC /* sampleResponse.json */; };
-		EEAB88D92B749DF7003AD305 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88D82B749DF7003AD305 /* NetworkImageView.swift */; };
+		EEAB88D92B749DF7003AD305 /* UnsplashImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88D82B749DF7003AD305 /* UnsplashImageView.swift */; };
 		EEAB88DD2B749FB0003AD305 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88DC2B749FB0003AD305 /* NetworkManager.swift */; };
 		EEAB88E12B74C4DD003AD305 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88E02B74C4DD003AD305 /* Color+Ext.swift */; };
 		EEAB88E32B74E1C9003AD305 /* PhotoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88E22B74E1C9003AD305 /* PhotoDetailsView.swift */; };
 		EEAB88EB2B750698003AD305 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88EA2B750698003AD305 /* UIColor+Ext.swift */; };
+		EEAB88ED2B750E36003AD305 /* PhotoGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88EC2B750E36003AD305 /* PhotoGridViewModel.swift */; };
+		EEAB88EF2B751503003AD305 /* UnsplashImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88EE2B751503003AD305 /* UnsplashImageViewModel.swift */; };
+		EEAB88F32B75821B003AD305 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88F22B75821B003AD305 /* Environment.swift */; };
+		EEAB88F62B758874003AD305 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88F52B758874003AD305 /* APIErrors.swift */; };
+		EEAB88F82B75887F003AD305 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88F72B75887F003AD305 /* Alerts.swift */; };
+		EEAB88FE2B761AB1003AD305 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB88FD2B761AB1003AD305 /* LoadingView.swift */; };
+		EEAB89032B76332B003AD305 /* PhotoGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB89022B76332B003AD305 /* PhotoGridViewModelTests.swift */; };
+		EEAB89082B763DE0003AD305 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB89072B763DE0003AD305 /* NetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,24 +51,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE46B34F2B76491C001D6C88 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		EE46B3572B76522C001D6C88 /* PhotoGridViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewUITests.swift; sourceTree = "<group>"; };
+		EE46B3612B76944B001D6C88 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EE82B5A02B740907006C92AC /* Photostic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photostic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE82B5A32B740907006C92AC /* PhotosticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosticApp.swift; sourceTree = "<group>"; };
 		EE82B5A52B740907006C92AC /* PhotoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridView.swift; sourceTree = "<group>"; };
 		EE82B5A72B740908006C92AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE82B5AA2B740908006C92AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE82B5B02B740908006C92AC /* PhotosticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE82B5B42B740908006C92AC /* PhotosticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosticTests.swift; sourceTree = "<group>"; };
 		EE82B5BA2B740908006C92AC /* PhotosticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE82B5BE2B740908006C92AC /* PhotosticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosticUITests.swift; sourceTree = "<group>"; };
 		EE82B5C02B740908006C92AC /* PhotosticUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosticUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE82B5D32B7417B0006C92AC /* MockUnsplashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUnsplashData.swift; sourceTree = "<group>"; };
 		EE82B5D52B742498006C92AC /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
 		EE82B5D82B742B3D006C92AC /* sampleResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleResponse.json; sourceTree = "<group>"; };
-		EEAB88D82B749DF7003AD305 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		EEAB88D82B749DF7003AD305 /* UnsplashImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImageView.swift; sourceTree = "<group>"; };
 		EEAB88DC2B749FB0003AD305 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EEAB88E02B74C4DD003AD305 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		EEAB88E22B74E1C9003AD305 /* PhotoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsView.swift; sourceTree = "<group>"; };
 		EEAB88EA2B750698003AD305 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		EEAB88EC2B750E36003AD305 /* PhotoGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewModel.swift; sourceTree = "<group>"; };
+		EEAB88EE2B751503003AD305 /* UnsplashImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImageViewModel.swift; sourceTree = "<group>"; };
+		EEAB88F02B757ECB003AD305 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		EEAB88F12B758180003AD305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EEAB88F22B75821B003AD305 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		EEAB88F52B758874003AD305 /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
+		EEAB88F72B75887F003AD305 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		EEAB88FD2B761AB1003AD305 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		EEAB89022B76332B003AD305 /* PhotoGridViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewModelTests.swift; sourceTree = "<group>"; };
+		EEAB89072B763DE0003AD305 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +110,7 @@
 		EE82B5972B740907006C92AC = {
 			isa = PBXGroup;
 			children = (
+				EE46B3612B76944B001D6C88 /* Launch Screen.storyboard */,
 				EE82B5A22B740907006C92AC /* Photostic */,
 				EE82B5B32B740908006C92AC /* PhotosticTests */,
 				EE82B5BD2B740908006C92AC /* PhotosticUITests */,
@@ -110,6 +131,7 @@
 		EE82B5A22B740907006C92AC /* Photostic */ = {
 			isa = PBXGroup;
 			children = (
+				EEAB88F12B758180003AD305 /* Info.plist */,
 				EEAB88E92B74F9D7003AD305 /* Model */,
 				EEAB88E42B74F90F003AD305 /* Screens */,
 				EEAB88DB2B749FA4003AD305 /* Managers */,
@@ -119,6 +141,8 @@
 				EE82B5A32B740907006C92AC /* PhotosticApp.swift */,
 				EE82B5A72B740908006C92AC /* Assets.xcassets */,
 				EE82B5A92B740908006C92AC /* Preview Content */,
+				EEAB88F02B757ECB003AD305 /* Config.xcconfig */,
+				EEAB88F22B75821B003AD305 /* Environment.swift */,
 			);
 			path = Photostic;
 			sourceTree = "<group>";
@@ -134,7 +158,7 @@
 		EE82B5B32B740908006C92AC /* PhotosticTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE82B5B42B740908006C92AC /* PhotosticTests.swift */,
+				EEAB89022B76332B003AD305 /* PhotoGridViewModelTests.swift */,
 			);
 			path = PhotosticTests;
 			sourceTree = "<group>";
@@ -142,8 +166,8 @@
 		EE82B5BD2B740908006C92AC /* PhotosticUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EE82B5BE2B740908006C92AC /* PhotosticUITests.swift */,
 				EE82B5C02B740908006C92AC /* PhotosticUITestsLaunchTests.swift */,
+				EE46B3572B76522C001D6C88 /* PhotoGridViewUITests.swift */,
 			);
 			path = PhotosticUITests;
 			sourceTree = "<group>";
@@ -159,8 +183,8 @@
 		EEAB88D22B743D8D003AD305 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EEAB88E02B74C4DD003AD305 /* Color+Ext.swift */,
-				EEAB88EA2B750698003AD305 /* UIColor+Ext.swift */,
+				EEAB89002B762D35003AD305 /* Colors */,
+				EEAB88F42B75885C003AD305 /* Alerts */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -168,7 +192,8 @@
 		EEAB88D72B749DCB003AD305 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EEAB88D82B749DF7003AD305 /* NetworkImageView.swift */,
+				EEAB88FF2B761ACC003AD305 /* ImageView */,
+				EEAB88FC2B761AA3003AD305 /* Generic */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				EEAB88DC2B749FB0003AD305 /* NetworkManager.swift */,
+				EEAB89072B763DE0003AD305 /* NetworkingService.swift */,
+				EE46B34F2B76491C001D6C88 /* MockNetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -194,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				EE82B5A52B740907006C92AC /* PhotoGridView.swift */,
+				EEAB88EC2B750E36003AD305 /* PhotoGridViewModel.swift */,
 			);
 			path = GridView;
 			sourceTree = "<group>";
@@ -213,6 +241,41 @@
 				EE82B5D52B742498006C92AC /* UnsplashImage.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EEAB88F42B75885C003AD305 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				EEAB88F52B758874003AD305 /* APIErrors.swift */,
+				EEAB88F72B75887F003AD305 /* Alerts.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		EEAB88FC2B761AA3003AD305 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				EEAB88FD2B761AB1003AD305 /* LoadingView.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		EEAB88FF2B761ACC003AD305 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				EEAB88D82B749DF7003AD305 /* UnsplashImageView.swift */,
+				EEAB88EE2B751503003AD305 /* UnsplashImageViewModel.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		EEAB89002B762D35003AD305 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				EEAB88E02B74C4DD003AD305 /* Color+Ext.swift */,
+				EEAB88EA2B750698003AD305 /* UIColor+Ext.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +330,8 @@
 				EE82B5BC2B740908006C92AC /* PBXTargetDependency */,
 			);
 			name = PhotosticUITests;
+			packageProductDependencies = (
+			);
 			productName = PhotosticUITests;
 			productReference = EE82B5BA2B740908006C92AC /* PhotosticUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -303,6 +368,8 @@
 				Base,
 			);
 			mainGroup = EE82B5972B740907006C92AC;
+			packageReferences = (
+			);
 			productRefGroup = EE82B5A12B740907006C92AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -321,6 +388,7 @@
 			files = (
 				EE82B5D92B742B3D006C92AC /* sampleResponse.json in Resources */,
 				EE82B5AB2B740908006C92AC /* Preview Assets.xcassets in Resources */,
+				EE46B3622B76944B001D6C88 /* Launch Screen.storyboard in Resources */,
 				EE82B5A82B740908006C92AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,14 +415,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAB88DD2B749FB0003AD305 /* NetworkManager.swift in Sources */,
+				EEAB88F32B75821B003AD305 /* Environment.swift in Sources */,
+				EEAB88ED2B750E36003AD305 /* PhotoGridViewModel.swift in Sources */,
 				EE82B5A62B740907006C92AC /* PhotoGridView.swift in Sources */,
-				EEAB88D92B749DF7003AD305 /* NetworkImageView.swift in Sources */,
+				EEAB88D92B749DF7003AD305 /* UnsplashImageView.swift in Sources */,
+				EEAB88FE2B761AB1003AD305 /* LoadingView.swift in Sources */,
 				EEAB88E32B74E1C9003AD305 /* PhotoDetailsView.swift in Sources */,
 				EE82B5D62B742498006C92AC /* UnsplashImage.swift in Sources */,
 				EE82B5D42B7417B0006C92AC /* MockUnsplashData.swift in Sources */,
 				EEAB88EB2B750698003AD305 /* UIColor+Ext.swift in Sources */,
 				EEAB88E12B74C4DD003AD305 /* Color+Ext.swift in Sources */,
+				EEAB89082B763DE0003AD305 /* NetworkingService.swift in Sources */,
+				EE46B3502B76491C001D6C88 /* MockNetworkManager.swift in Sources */,
+				EEAB88EF2B751503003AD305 /* UnsplashImageViewModel.swift in Sources */,
 				EE82B5A42B740907006C92AC /* PhotosticApp.swift in Sources */,
+				EEAB88F82B75887F003AD305 /* Alerts.swift in Sources */,
+				EEAB88F62B758874003AD305 /* APIErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE82B5B52B740908006C92AC /* PhotosticTests.swift in Sources */,
+				EEAB89032B76332B003AD305 /* PhotoGridViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,8 +446,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE46B3582B76522C001D6C88 /* PhotoGridViewUITests.swift in Sources */,
 				EE82B5C12B740908006C92AC /* PhotosticUITestsLaunchTests.swift in Sources */,
-				EE82B5BF2B740908006C92AC /* PhotosticUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +469,7 @@
 /* Begin XCBuildConfiguration section */
 		EE82B5C22B740908006C92AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAB88F02B757ECB003AD305 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -453,6 +530,7 @@
 		};
 		EE82B5C32B740908006C92AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAB88F02B757ECB003AD305 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -515,9 +593,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Photostic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Photostic/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -544,9 +624,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Photostic/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Photostic/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
