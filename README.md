@@ -18,7 +18,7 @@ This is a coding challenge for prospective mobile developer applicants applying 
 #### Build simple app that allows viewing and interacting with a grid of curated photos from Unsplash
 
 - [x] Fork this repo. Keep it public until we have been able to review it.
-- [x] Android: _Java_ or _Kotlin_ | iOS: _Swift 4_
+- [x] iOS: _Swift 5.8_
 - [x] Unsplash API docs are here: https://unsplash.com/documentation.
 - [X] Grid of photos should preserve the aspect ratio of the photos it's displaying, meaning you shouldn't crop the image in any way.
 - [x] App should work in both portrait and landscape orientations of the device.
