@@ -1,0 +1,14 @@
+//
+//  Config.xcconfig
+//  Photostic
+//
+//  Created by Shobhit Puri on 2024-02-08.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// TODO: We can use Run Scripts to replace this file at build time with an .env enviroment file.
+// For a real project that environment file would be secretly shared with devs
+// Something like https://moinulhassan.medium.com/read-variables-from-env-file-to-xcconfig-files-for-different-schemes-in-xcode-3ef977a0eef8
+UNSPLASH_API_CLIENT_ID=

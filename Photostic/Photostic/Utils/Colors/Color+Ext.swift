@@ -8,6 +8,8 @@
 import SwiftUI
 
 extension Color {
+    /// The color comes as hex string from the Unslash  API. This is used to conver to a Color object
+    /// For inspiration behind the approach, read: https://blog.schurigeln.com/using-hex-color-values-in-swiftui/
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet(charactersIn: "#"))
         let rgbValue = UInt32(hex, radix: 16)

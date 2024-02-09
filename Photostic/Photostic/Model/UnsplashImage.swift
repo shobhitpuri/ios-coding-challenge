@@ -13,7 +13,12 @@
 import Foundation
 
 // MARK: - UnsplashAPIElement
-struct UnsplashImage: Codable, Identifiable {
+struct UnsplashImage: Codable, Identifiable, Hashable {
+    
+    static func == (lhs: UnsplashImage, rhs: UnsplashImage) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     let id: String
     let width, height: Int?
     let color, blurHash: String?
@@ -32,12 +37,16 @@ struct UnsplashImage: Codable, Identifiable {
 }
 
 // MARK: - Urls
-struct Urls: Codable {
+struct Urls: Codable, Hashable {
     let raw, full, regular, small: String?
     let thumb, smallS3: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case raw, full, regular, small, thumb
         case smallS3 = "small_s3"
     }
+}
+
+struct UnsplashImageRespose: Codable {
+    let response: [UnsplashImage]
 }

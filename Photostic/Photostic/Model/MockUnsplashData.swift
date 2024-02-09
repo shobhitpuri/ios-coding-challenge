@@ -20,7 +20,7 @@ class MockUnsplashData: ObservableObject, Identifiable {
     }
     
     func loadMockData() -> [UnsplashImage]? {
-        // Assuming the sampleResponse.json file is in your app bundle
+        // sampleResponse.json file is in app bundle
         guard let url = Bundle.main.url(forResource: "sampleResponse", withExtension: "json") else {
             fatalError("Failed to locate sampleResponse.json in bundle.")
         }
@@ -28,12 +28,10 @@ class MockUnsplashData: ObservableObject, Identifiable {
         do {
             // Read the JSON data from the file
             let jsonData = try Data(contentsOf: url)
-            
-            // Decode the JSON data into your Swift structs
+            // Decode the JSON data into Swift structs
             let unsplashAPIResponse: [UnsplashImage] = try JSONDecoder().decode([UnsplashImage].self, from: jsonData)
-            //print("\(unsplashAPI)")
             // Now you can use the `unsplashAPI` object as your mock data
-            return unsplashAPIResponse // Or use it in any way you need
+            return unsplashAPIResponse
         } catch {
             print("Error decoding JSON: \(error)")
         }
