@@ -32,8 +32,7 @@ final class NetworkManager : NetworkingService {
     /// - Parameter page: page no.
     /// - Returns: Array of UnsplashImage type
     func getUnsplashImages(page: Int) async throws -> [UnsplashImage] {
-        print("Fetch URL: \(unsplashAPIFetchURL)")
-        print("Page: \(page)")
+        print("Fetch URL: \(unsplashAPIFetchURL)&page=\(page)")
         // Check for key
         if Environment.apiKey.isEmpty {
             throw APIError.invalidAPIKey
@@ -46,6 +45,7 @@ final class NetworkManager : NetworkingService {
         
         let (data, _) = try await URLSession.shared.data(from: url)
         
+        // TODO: Check the status code here for 200 response before decoding data for more granular error handling
         do {
             let decoder = JSONDecoder()
             return try decoder.decode([UnsplashImage].self, from: data)
@@ -75,6 +75,8 @@ final class NetworkManager : NetworkingService {
         
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
+            // TODO: Check the status code here for 200 response before decoding data for more granular error handling
+            
             guard let image = UIImage(data: data) else {
                 return nil
             }
