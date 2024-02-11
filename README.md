@@ -60,7 +60,7 @@ This is a coding challenge for prospective mobile developer applicants applying 
 4. Implemented screens and flow using the mocks.
 5. Added following
     - Network logic using async await,
-    - Caching,
+    - Caching (in-memory),
     - MVVM pattern,
     - Pagination,
     - Splash Screen,
@@ -70,7 +70,7 @@ This is a coding challenge for prospective mobile developer applicants applying 
 
 ### Optimizations and Best Practises Incorporated
 1. CLIENT_ID / API_KEY not included in the project, and in separate config file, which is added to gitignore. [Add your key to Config.xcconfig before trying to run project](https://github.com/shobhitpuri/ios-coding-challenge/blob/master/Photostic/Photostic/Config.xcconfig).
-2. Offline friendly app, with cahing of images as well as API calls (default by URLsession). Faster load times for images, and prevents unnecessary calls.
+2. Offline friendly app, with in-memory cahing of images as well as API responses. Faster load times for images, and prevents unnecessary calls.
 3. Error Handling done to show user alerts.
 4. Constants at the top of file (could have been in a global file as well)
 5. Customized Placeholder almost similar to blue effect, of exact the size of image, while maintaining the aspect ratio.
@@ -87,22 +87,23 @@ This is a coding challenge for prospective mobile developer applicants applying 
 4. Tried snapshot testing, but due to shortage of time, couldn't set it up.
 
 ### Future Optimizations Plans
-1. Incorporate webP / AVIF format if/when I was on the paid API plan.
-2. Consider decouping Network layer more maybe using a Factory pattern, such that if we use multiple Image APIs in future, the interface and logic of rest of the code remain same. We only need to make 
-3. Consider implementing Repository pattern around APIs to read from local data if data not returned from remote. 
-4. Deciding Image quality to load based on network quality (releavnt with remote dealerships) - multiple libraries do that.
-5. Implement Logging (remote) using Singleton pattern for better debugging.
-6. Make the views more accessible, eg: [Apple Accessibility guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility) talk about having buttons irrespective of gestures on the views.
-7. Localization Support rather than harcoding strings
-8. For the cache size, check for existing free storage on devices before deciding the number.
-9. Separate constants in the codebase for better readability.
-10. Zoom feature 
-11. Better testing coverage.
-12. Including performance benchmarks, performance tests,  snapshot tests, accessibility testing (and following best practises).
-13. Animations
-14. Add brand colors
-15. Dark Mode support
-16. Feature flags (maybe not needed for simple ones)
+1. Depending on need, access using disk based caching instead of in-memory for longer lasting cache.  
+2. Incorporate webP / AVIF format if/when I was on the paid API plan.
+3. Consider decouping Network layer more maybe using a Factory pattern, such that if we use multiple Image APIs in future, the interface and logic of rest of the code remain same. We only need to make 
+4. Consider implementing Repository pattern around APIs to read from local data if data not returned from remote. 
+5. Deciding Image quality to load based on network quality (releavnt with remote dealerships) - multiple libraries do that.
+6. Implement Logging (remote) using Singleton pattern for better debugging.
+7. Make the views more accessible, eg: [Apple Accessibility guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility) talk about having buttons irrespective of gestures on the views.
+8. Localization Support rather than harcoding strings
+9. For the cache size, look into optimizing the max allowed size.
+10. Separate constants in the codebase for better readability.
+11. Zoom feature 
+12. Better testing coverage.
+13. Including performance benchmarks, performance tests,  snapshot tests, accessibility testing (and following best practises).
+14. Animations
+15. Add brand colors
+16. Dark Mode support
+17. Feature flags (maybe not needed for simple ones)
 
 ### Screenshots
 
