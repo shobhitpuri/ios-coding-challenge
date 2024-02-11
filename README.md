@@ -86,24 +86,35 @@ This is a coding challenge for prospective mobile developer applicants applying 
 3. Network Monitor to monitor when data goes away but wasn't worth this time, after dwendling into it for a while with simulators.
 4. Tried snapshot testing, but due to shortage of time, couldn't set it up.
 
-### Future Optimizations Plans
-1. Depending on need, access using disk based caching instead of in-memory for longer lasting cache.  
-2. Incorporate webP / AVIF format if/when I was on the paid API plan.
-3. Consider decouping Network layer more maybe using a Factory pattern, such that if we use multiple Image APIs in future, the interface and logic of rest of the code remain same. We only need to make 
-4. Consider implementing Repository pattern around APIs to read from local data if data not returned from remote. 
-5. Deciding Image quality to load based on network quality (releavnt with remote dealerships) - multiple libraries do that.
-6. Implement Logging (remote) using Singleton pattern for better debugging.
-7. Make the views more accessible, eg: [Apple Accessibility guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility) talk about having buttons irrespective of gestures on the views.
-8. Localization Support rather than harcoding strings
-9. For the cache size, look into optimizing the max allowed size.
-10. Separate constants in the codebase for better readability.
-11. Zoom feature 
-12. Better testing coverage.
-13. Including performance benchmarks, performance tests,  snapshot tests, accessibility testing (and following best practises).
-14. Animations
-15. Add brand colors
-16. Dark Mode support
-17. Feature flags (maybe not needed for simple ones)
+### Future Optimizations Possibilities
+_**Image Optimization**_
+- Incorporate webP / AVIF format if/when I was on the paid API plan.
+- Deciding Image quality to load based on network quality (releavnt with remote dealerships) - multiple libraries do that.
+- Depending on need, try disk based caching instead of in-memory for longer lasting cache.  
+- For the cache size, look into optimizing the max allowed size.
+  
+_**Network / API calls Optimizations**_
+- Cancel the tasks to download image if user already scrolled fast past them or look into reprioritizing.
+- Retry API calls with exponential backoff after network failure.
+- Consider decouping Network layer more maybe using a Factory pattern, such that if we use multiple Image APIs in future, the interface and logic of rest of the code remain same. We only need to make 
+- Consider implementing Repository pattern around APIs to read from local data if data not returned from remote. 
+
+_**Features / UI**_
+- Pinch to Zoom on details page
+- When user swipes on details and reaches last image, make an API call to fetch next page from details view. 
+- Make the views more accessible, eg: [Apple Accessibility guidelines](https://developer.apple.com/design/human-interface-guidelines/accessibility) talk about having buttons irrespective of gestures on the views.
+- Animations
+- Dark Mode support
+- Add brand colors
+
+_**Coding Standars / Readability / Quality**_
+- Implement Logging (remote) using Singleton pattern for better debugging.
+- Localization Support rather than harcoding strings
+- Separate constants in the codebase for better readability.  
+- Better testing coverage.
+- Including performance benchmarks, performance tests,  snapshot tests, accessibility testing (and following best practises).
+- Feature flags (maybe not needed for simple ones)
+- Look into the need of Details view needing it's own ViewModel? Maybe when we have a fetch call to next page from within the Details View?
 
 ### Screenshots
 
