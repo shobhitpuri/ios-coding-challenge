@@ -12,9 +12,9 @@ import SwiftUI
 struct UnsplashImageView: View {
     @StateObject var unsplashImageViewModel = UnsplashImageViewModel()
     
-    let urlString: String
-    let color: Color
-    let size: CGSize
+    @State var urlString: String
+    @State var color: Color
+    @State var size: CGSize
     
     var body: some View {
         // Placeholder view when image is being loaded.

@@ -15,7 +15,7 @@ This is a coding challenge for prospective mobile developer applicants applying 
 
 ## Goal
 
-#### Build simple app that allows viewing and interacting with a grid of curated photos from Unsplash
+#### Build simple app that allows viewing and interacting with a grid of curated photos from Unsplash: Completed all above criteria.
 
 - [x] Fork this repo. Keep it public until we have been able to review it.
 - [x] iOS: _Swift 5.8_
@@ -25,7 +25,7 @@ This is a coding challenge for prospective mobile developer applicants applying 
 - [x] Grid should support pagination, i.e. you can scroll on grid of photos infinitely.
 - [x] When user taps on a photo on the grid it should show only the tapped photo in full screen with more information about the photo.
 - [x] When user swipes on a photo in full screen, it should show the the next photo.
-- [ ] Preserve current photo's location on the grid, so when she dismisses the full screen, grid of photos should contain the last photo she saw in photo details.
+- [x] Preserve current photo's location on the grid, so when she dismisses the full screen, grid of photos should contain the last photo she saw in photo details.
 
 ### Evaluation:
 - [x] Solution compiles. If there are necessary steps required to get it to compile, those should be covered in README.md.
@@ -40,7 +40,7 @@ This is a coding challenge for prospective mobile developer applicants applying 
 - Min iOS version supported is iOS 15, after the disscussion in the last round. Used XCode 14.3.1 for building.
 
 ### Demo
-  [![Demo iOS Unsplash App](https://github-production-user-asset-6210df.s3.amazonaws.com/3515359/303755578-dbca8fc1-2400-473b-bd6e-4c3602bad4ab.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240209T192714Z&X-Amz-Expires=300&X-Amz-Signature=f690a13bfb460469d5a008527398c1213a5c6271df2927d62f0667cebe17a7e1&X-Amz-SignedHeaders=host&actor_id=3515359&key_id=0&repo_id=753295492)](https://youtu.be/lAbSZSpT3Rg)
+  [![Demo Photostic iOS Unsplash App](https://github.com/shobhitpuri/ios-coding-challenge/assets/3515359/4b2c9dcc-8b6f-4a55-837c-2307822f899a)](https://youtu.be/GuPWxQ-4wP8)
 
 ### Process Followed
 1. Planning - Divide and Conquer: Created a list of tasks and prioritized it. Check [Photostic Project](https://github.com/users/shobhitpuri/projects/3/views/1)
@@ -70,7 +70,7 @@ This is a coding challenge for prospective mobile developer applicants applying 
 
 ### Optimizations and Best Practises Incorporated
 1. CLIENT_ID / API_KEY not included in the project, and in separate config file, which is added to gitignore. [Add your key to Config.xcconfig before trying to run project](https://github.com/shobhitpuri/ios-coding-challenge/blob/master/Photostic/Photostic/Config.xcconfig).
-2. Offline friendly (somewhat) with cahing of images upto max of 100 items. Faster load times, and prevents unnecessary calls.
+2. Offline friendly app, with cahing of images as well as API calls (default by URLsession). Faster load times for images, and prevents unnecessary calls.
 3. Error Handling done to show user alerts.
 4. Constants at the top of file (could have been in a global file as well)
 5. Customized Placeholder almost similar to blue effect, of exact the size of image, while maintaining the aspect ratio.
@@ -103,7 +103,6 @@ This is a coding challenge for prospective mobile developer applicants applying 
 14. Add brand colors
 15. Dark Mode support
 16. Feature flags (maybe not needed for simple ones)
-17. Improve the logic for user coming back from detail view after swiping a lot, such that it scrolls the grid view to the new location.
 
 ### Screenshots
 
@@ -131,10 +130,9 @@ This is a coding challenge for prospective mobile developer applicants applying 
 
 ### iPad
 
-![Simulator Screenshot - iPad (10th generation) - 2024-02-09 at 09 45 19](https://github.com/shobhitpuri/ios-coding-challenge/assets/3515359/c2193cd7-78d5-40b7-bec4-c379ca2d07ad)
-![Simulator Screenshot - iPad (10th generation) - 2024-02-09 at 09 44 54](https://github.com/shobhitpuri/ios-coding-challenge/assets/3515359/b4ea8fe4-a977-486e-a4d1-3d0143e8defe)
-
-
+ | 1 | 2 |
+  |--|--|
+  | ![](https://github.com/shobhitpuri/ios-coding-challenge/assets/3515359/f3a21d7f-eaed-4e64-88ae-e0eb5a3ba5d6) | ![](https://github.com/shobhitpuri/ios-coding-challenge/assets/3515359/1ee16510-6c83-48ff-9b82-a8b15127d589) 
 
 
    
