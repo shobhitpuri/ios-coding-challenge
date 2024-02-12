@@ -84,7 +84,7 @@ struct PhotoGridView: View {
                         // Using logic to scroll to the position of the image, the user left in details view.
                         withAnimation {
                             print("Grid onChange to \(newValue)")
-                            if !viewModel.imageArray.isEmpty && newValue > 0 {
+                            if !viewModel.imageArray.isEmpty && newValue >= 0 {
                                 proxy.scrollTo(viewModel.imageArray[newValue].id, anchor: .center)
                             }
                         }
