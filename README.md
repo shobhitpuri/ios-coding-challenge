@@ -9,7 +9,7 @@
 - [Future Optimizations Plans](#future-optimizations-plans)
 - [Screenshots](#screenshots)
 
-# Mobile Developer Coding Challenge
+# iOS Coding Challenge Using SwiftUI
 
 This is a coding challenge for prospective mobile developer applicants applying through http://work.traderev.com/
 
